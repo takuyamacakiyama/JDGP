@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JDGP | 日本障害者ゴルフ選手会</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#d9eaff",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed": "#301400",
+              "on-background": "#091d2e",
+              "surface-container": "#e3efff",
+              "on-secondary-container": "#663100",
+              "on-surface": "#091d2e",
+              "on-error": "#ffffff",
+              "surface-variant": "#d1e4fb",
+              "surface-container-low": "#edf4ff",
+              "on-error-container": "#93000a",
+              "secondary-fixed-dim": "#ffb783",
+              "outline-variant": "#c1c8c2",
+              "surface-dim": "#c9dcf3",
+              "secondary-fixed": "#ffdcc5",
+              "surface": "#f7f9ff",
+              "secondary": "#944a00",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-container": "#003f62",
+              "on-tertiary-container": "#5fade8",
+              "tertiary-fixed-dim": "#92ccff",
+              "on-secondary": "#ffffff",
+              "primary-container": "#1a4331",
+              "tertiary-fixed": "#cce5ff",
+              "surface-container-highest": "#d1e4fb",
+              "background": "#f7f9ff",
+              "outline": "#717973",
+              "primary-fixed-dim": "#a4d0b8",
+              "surface-tint": "#3e6752",
+              "error": "#ba1a1a",
+              "on-primary-container": "#85b098",
+              "tertiary": "#002841",
+              "inverse-primary": "#a4d0b8",
+              "on-primary-fixed": "#002114",
+              "secondary-container": "#fc8f34",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#264e3c",
+              "on-tertiary-fixed": "#001e31",
+              "primary": "#002d1c",
+              "on-tertiary-fixed-variant": "#004b73",
+              "on-surface-variant": "#414944",
+              "on-secondary-fixed-variant": "#713700",
+              "inverse-on-surface": "#e8f2ff",
+              "inverse-surface": "#203243",
+              "surface-bright": "#f7f9ff",
+              "primary-fixed": "#c0edd3",
+              "error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "Noto Sans JP"],
+              "body": ["Noto Sans JP", "Public Sans"],
+              "label": ["Public Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+      }
+      .editorial-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .bg-glass {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-emerald-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="text-2xl font-black text-emerald-900 dark:text-emerald-50 font-['Manrope','Noto_Sans_JP'] tracking-tight">JDGP</div>
+<nav class="hidden md:flex items-center gap-8 font-['Manrope','Noto_Sans_JP'] font-bold tracking-tight">
+<a class="text-emerald-900/70 dark:text-emerald-50/70 hover:text-emerald-900 hover:bg-emerald-50/50 dark:hover:bg-emerald-800/50 transition-all duration-300" href="#">About</a>
+<a class="text-emerald-900/70 dark:text-emerald-50/70 hover:text-emerald-900 hover:bg-emerald-50/50 dark:hover:bg-emerald-800/50 transition-all duration-300" href="#">活動</a>
+<a class="text-emerald-900/70 dark:text-emerald-50/70 hover:text-emerald-900 hover:bg-emerald-50/50 dark:hover:bg-emerald-800/50 transition-all duration-300" href="#">お知らせ</a>
+<a class="text-emerald-900/70 dark:text-emerald-50/70 hover:text-emerald-900 hover:bg-emerald-50/50 dark:hover:bg-emerald-800/50 transition-all duration-300" href="#">支援する</a>
+<a class="text-emerald-900/70 dark:text-emerald-50/70 hover:text-emerald-900 hover:bg-emerald-50/50 dark:hover:bg-emerald-800/50 transition-all duration-300" href="#">お問い合わせ</a>
+</nav>
+<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded-lg font-bold scale-95 active:scale-90 transition-transform hover:shadow-[0_4px_12px_rgba(148,74,0,0.3)]">
+                寄付する
+            </button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" alt="Disabled golfer in a specialized wheelchair smiling and taking a swing on a sun-drenched green fairway with morning mist and soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyv-6Iic3kc5kgwtTqZvsxTvNGYc4Zd6WjbA0dgow4T2pHkaFKIohGd1D6Br9hFfbUcC2hJHYd1wcO__-EeG5oCew0H_Z236OVyDXWEUsmr8_fCw1m61KUZtFgr2tqqbrUdhwzZIYqGDJAiJegoABTAXDwpuAXcl8E_iSn3ifRT7FF9lmSwXo6G-jY1a3PXS65givWYdfHS_ipNvwPHAwFshcf4SCOzPNmeBBm6OZdhaRUSQknP4vvbArRRS53ulOoR-APyndLqLRZ"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 w-full py-20">
+<div class="max-w-2xl space-y-6">
+<div class="inline-block py-1 px-4 bg-secondary text-on-secondary font-bold text-sm tracking-widest rounded-full uppercase">
+                        Empowering Athletes
+                    </div>
+<h1 class="text-white font-headline font-black text-5xl md:text-7xl leading-tight tracking-tight">
+                        障がいがあっても、<br/>ゴルフに挑戦できる<br/>環境を。
+                    </h1>
+<p class="text-white/90 text-lg md:text-xl font-medium max-w-xl leading-relaxed">
+                        障がい者ゴルファーが安心してゴルフを楽しめる環境づくりを進め、挑戦を支えます。
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-[0_20px_40px_rgba(148,74,0,0.2)] transition-all">
+                            活動を知る
+                        </button>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-primary transition-all">
+                            支援する（寄付・協賛）
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Statistics -->
+<section class="bg-surface-container-low py-24 relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="text-center md:text-left space-y-2">
+<div class="text-primary/60 font-headline font-bold uppercase tracking-widest text-sm">Members</div>
+<div class="flex items-baseline justify-center md:justify-start gap-2">
+<span class="text-7xl font-headline font-black text-primary">70</span>
+<span class="text-xl font-bold text-primary-container">名</span>
+</div>
+<p class="text-on-surface-variant font-medium">切磋琢磨し合う会員数</p>
+</div>
+<div class="text-center md:text-left space-y-2">
+<div class="text-primary/60 font-headline font-bold uppercase tracking-widest text-sm">JOYX OPEN</div>
+<div class="flex items-baseline justify-center md:justify-start gap-2">
+<span class="text-7xl font-headline font-black text-primary">11</span>
+<span class="text-xl font-bold text-primary-container">回</span>
+</div>
+<p class="text-on-surface-variant font-medium">ハイレベルな派遣実績</p>
+</div>
+<div class="text-center md:text-left space-y-2">
+<div class="text-primary/60 font-headline font-bold uppercase tracking-widest text-sm">Tournaments</div>
+<div class="flex items-baseline justify-center md:justify-start gap-2">
+<span class="text-7xl font-headline font-black text-primary">9</span>
+<span class="text-xl font-bold text-primary-container">回</span>
+</div>
+<p class="text-on-surface-variant font-medium">親睦大会の累計開催数</p>
+</div>
+</div>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+</section>
+<!-- 3 Pillars of Activities -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-20 text-center md:text-left">
+<div class="flex items-center gap-4 justify-center md:justify-start mb-4">
+<span class="h-px w-12 bg-secondary"></span>
+<span class="text-secondary font-bold tracking-widest uppercase">Our Mission</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-headline font-black text-primary">活動の3本柱</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Activities Pillar 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Professional disabled golfer showing technique to a group of inspired beginners on a lush training range" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByPn7pFYGWfGCDK8dL85buEudqtDFYV0c_9BapB6mqpeRO4d2kihPSRhfWS_UZ0GPIV8RIJMqgo0gqYCgZCTqCjtx_JftxT_o8SVIc9-L1gh_0QbifoKmi3zIJIaLDsvaL7Unfky4o8wNvcVrELKGCDDxZoxEdQkOmK6FT76PNMHt4MojPGdFdWygF1vToH1YNfeVvdU0QyzNFvb1KYyWHCStxTYbxduBUwBkLA2y1BRiHMC534q2QIKWc-l2M5Fs8T3I7Wf2p_K8b"/>
+</div>
+<div class="p-8 space-y-4">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">golf_course</span>
+</div>
+<h3 class="text-2xl font-bold text-primary">活動支援</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                障がい者ゴルフの競技力向上を目的とした練習会や、プロトーナメントへの派遣を行っています。
+                            </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#">
+                                詳しく見る <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Activities Pillar 2 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Diverse group of people with various disabilities laughing and high-fiving during a inclusive golf social event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9DHj46B84vaEHoTCEbHvsKrwhCP3QNwqKHOinQSLf1hmi1LOvE30sBk6bEvFFcC2zMc3efywsdZdnSvOln9MlRpT2a8YNQYyLwLJIliV6RmYq95pagRvx22ByPGru_7m4xzgk_ctTU8twc3T8ZGb8qT37fV7N6FeQ1biVLWd5kZ-0dQ0Q4tUvSK9BSMEAdBvwtb7dhzAvqp03fCHkGNjIX9yT1-yGdWVLINQSYJdZV72cxT40wV5Zk9BkDAss0c_SoClWhCo2mi8R"/>
+</div>
+<div class="p-8 space-y-4">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">group</span>
+</div>
+<h3 class="text-2xl font-bold text-primary">参加支援</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                障がいを問わず誰でも参加できる親睦大会を企画し、ゴルフを通じた交流の場を提供しています。
+                            </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#">
+                                詳しく見る <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Activities Pillar 3 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Handshake between a business person and a non-profit representative against a clean modern architectural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuFqy8j3leYw3dSE5KplrbA1QQuTsjliEMZd26Zl588usLwOLZj8zSHaHwMjpQj_wUo9TbbwXpKruLeQWDk4hQuFFf2TZwAZ5BJY70Z8qPzChfkepDk89hHHsTkvFHSRnpA01S0xqPWpzSNESzMG62-9bFQSrFqb4pbOKbPAFC8DwyZAbX4_AuOY3f6CPynN-T6u-dlJOZ75_wQ-80cnAvcq6qhK4KxlZvo0ks40vj0ZbqzrlHR_jnZbz--jEK-hDAm-ngie6h5aAF"/>
+</div>
+<div class="p-8 space-y-4">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">handshake</span>
+</div>
+<h3 class="text-2xl font-bold text-primary">連携・普及</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                企業や他団体と連携し、障がい者ゴルフへの理解促進とインフラ整備の普及活動を推進します。
+                            </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#">
+                                詳しく見る <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- News & Reports (Editorial Bento-ish) -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="space-y-4">
+<h2 class="text-4xl font-headline font-black text-primary">最新のお知らせ</h2>
+<p class="text-on-surface-variant font-medium">JDGPの最新ニュースと活動報告をお届けします</p>
+</div>
+<a class="px-6 py-3 border border-primary/20 rounded-lg font-bold text-primary hover:bg-primary hover:text-white transition-all" href="#">
+                        一覧を見る
+                    </a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Featured News -->
+<article class="md:col-span-7 group relative overflow-hidden rounded-2xl bg-white shadow-sm">
+<div class="aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Exciting golf tournament leaderboard at dusk with dramatic lighting and professional atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZlHtSBl2GUAC3Utea0XheaXp_kVDEQpQZv0mSr-KM1XJ8qJyxIuWBm4E91GDQu2dT_LhDdb8_l_mkxPYssb8lNZUVpMbaUWtrpYONpwMTrWHFrnVj_KqNk_sZQvDBhSVT0U_DpluCa4OqUfrXmgyVHe9sQo3LFu-PFT20mW0esVAmvaAePcu7rahP2JJ9YDN66BQBqYqRhoF6Aejp8qqYFW5Sm9S6UuDVGGcXcdjw2J7VW_C-Chl0xK6DaODnXsu1a4awElWC8hKO"/>
+</div>
+<div class="p-8 space-y-4">
+<div class="flex items-center gap-4">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed font-bold text-xs rounded uppercase">Activity</span>
+<time class="text-sm text-on-surface-variant font-medium">2024.05.15</time>
+</div>
+<h3 class="text-2xl font-black text-primary group-hover:text-secondary transition-colors">
+                                第11回 JOYX OPEN 2024への選手派遣が決定しました
+                            </h3>
+<p class="text-on-surface-variant line-clamp-2">
+                                今年も実力派選手3名を派遣することが決定いたしました。障がい者ゴルフの更なる発展を目指し、全力で挑みます。
+                            </p>
+</div>
+</article>
+<!-- Sidebar News Stack -->
+<div class="md:col-span-5 flex flex-col gap-6">
+<article class="flex gap-4 group cursor-pointer">
+<div class="w-32 h-24 shrink-0 rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" alt="Closeup of a golf club hitting a ball in slow motion on a beautiful green" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzewAhy_aYA3BOWyGs8XgTUYCReNBiIaZ_J6MmxOMki_aZ5mUTQKEn83q-nnLIE3puYrcdkjri3cq9N2BBT8HxHDwnxUudhGG7BheacoTq1Rcdsk6bkdj9alQjXB7M1cD7JRa9xV2kIMXjq9-_dFvnUsMimFzCkYNLKRfXOxhC-zJYUD4EDD836xF31xhi84ypznpgxQ_DDhKQ-b-kwwaA98OQh6d6Pu_o8sSPTo-vJIoWcL_6XiPk77Hkh0RsZaj5oa9boXHKZZou"/>
+</div>
+<div class="space-y-1">
+<time class="text-xs text-on-surface-variant">2024.05.01</time>
+<h4 class="font-bold text-primary group-hover:text-secondary transition-colors line-clamp-2">春の親睦ゴルフ大会開催レポート</h4>
+<span class="text-xs font-bold text-secondary">Report</span>
+</div>
+</article>
+<article class="flex gap-4 group cursor-pointer">
+<div class="w-32 h-24 shrink-0 rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" alt="Abstract golf course landscape with morning dew and sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfpBwKiRIDKjRuvlHr4xyQq67LIZvrEmr77s655ojR8-ulLWUhVjSPSPxy2yl5Pc-Tv2L8bVZmTz1k2SjOqUKHvy75b-2NP6HGy5I2gVSGY0367asTJBPei97j8L_ayq7mz0GgTynCsU7ZZVzBplbmIrNOixElDBX16NWLCOaL9VowD8poOFh6y5R2BshPPUgt5gQgt78EBYGX4JlQZuvEjwHyMrvlMIoWKV9KL5GXpPO_PlKIuiJZGGwLPExm6BKPN_KaeKz9uSfB"/>
+</div>
+<div class="space-y-1">
+<time class="text-xs text-on-surface-variant">2024.04.20</time>
+<h4 class="font-bold text-primary group-hover:text-secondary transition-colors line-clamp-2">新規正会員の募集を開始いたしました</h4>
+<span class="text-xs font-bold text-secondary">Information</span>
+</div>
+</article>
+<article class="flex gap-4 group cursor-pointer">
+<div class="w-32 h-24 shrink-0 rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" alt="Team brainstorming session with sticky notes and diverse participants in a bright office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiSyLziIu8A39B5EafXE4Mb3BPJIn3aHH-ic9WgiYRCpNpkiZ_FPYrFb3TTGgm44oO6Iq_Xs7s3Cg2oiAICNWS56VI5tgJ_cMKlnMY_ehFxBNWaEcFb8f1Pr-TSLD0eVGQ_Y_4crh6UIVrzaPZwaRsVSDCggg6X9YuURHkqKIB8kwu_NRkhdHXnZ0UCb9_2nxrd5-8H0-xRFNq5odDPk1oxqnp_5WIZWGpXRF5Hq-Vt9VPXtWczwZ2BO2bShzbuR5HzWIpaUkG9MKR"/>
+</div>
+<div class="space-y-1">
+<time class="text-xs text-on-surface-variant">2024.04.10</time>
+<h4 class="font-bold text-primary group-hover:text-secondary transition-colors line-clamp-2">【ご報告】ボランティアスタッフ研修会を実施</h4>
+<span class="text-xs font-bold text-secondary">Activity</span>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- Support Options (Asymmetric Layout) -->
+<section class="py-32 bg-primary overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary-container z-0 opacity-50 skew-x-12 translate-x-32"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-8">
+<div class="space-y-4">
+<h2 class="text-4xl md:text-6xl font-headline font-black text-white leading-tight">
+                                あなたの支援が、<br/>未来の「一打」を支える。
+                            </h2>
+<p class="text-primary-fixed-dim text-lg md:text-xl leading-relaxed">
+                                JDGPは、障がいを持つすべてのゴルファーが平等にチャンスを持てる社会を目指しています。多様な方法で私たちの活動を支えてください。
+                            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 hover:bg-white/10 transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl mb-4">volunteer_activism</span>
+<h4 class="text-white font-bold text-xl mb-2">個人寄付</h4>
+<p class="text-white/60 text-sm">一口3,000円から、選手たちの遠征費や活動費として活用されます。</p>
+</div>
+<div class="p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 hover:bg-white/10 transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl mb-4">corporate_fare</span>
+<h4 class="text-white font-bold text-xl mb-2">企業協賛</h4>
+<p class="text-white/60 text-sm">大会スポンサーやオフィシャルパートナーとして、社会貢献活動を共に。</p>
+</div>
+<div class="p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 hover:bg-white/10 transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl mb-4">person_add</span>
+<h4 class="text-white font-bold text-xl mb-2">会員・ボランティア</h4>
+<p class="text-white/60 text-sm">選手として、または運営のサポーターとして一緒に活動しませんか？</p>
+</div>
+<div class="p-6 bg-secondary text-on-secondary rounded-2xl hover:shadow-[0_20px_40px_rgba(148,74,0,0.3)] transition-all flex flex-col justify-center items-center text-center">
+<p class="font-bold text-lg">今すぐ支援を始める</p>
+<span class="material-symbols-outlined mt-2 text-3xl">arrow_circle_right</span>
+</div>
+</div>
+</div>
+<div class="relative hidden lg:block">
+<div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl rotate-2 translate-x-8">
+<img class="w-full h-full object-cover" alt="Artistic closeup of a brand new white golf ball sitting perfectly on a tee with blurred green background and cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD64Ru36IJT6NlK-g3l94BpEreK01yh-3GOJcYqF2iTjvG23uKMU-MLHMoZMAYe5qz4_dC-Hi86Uqs6QorEQP_aFtPVPBvJDnGunI8el14NnwfBHdyDEUSNCNmnlHomS1uc9etn_r1rRcOpQHRJckCYJcUcz22Eo4mGdLEyQi5fUr9gUmm-KJE4I6BdM-5We9lyw4wSnbVRXZlbVmvfZYlkcCCxRy-lhFIv4wWrCAv17p3pmd0WOyN5Nt6d91hlShrL731nULfErQ2O"/>
+</div>
+<div class="absolute -top-12 -left-12 w-64 h-64 border-8 border-secondary rounded-3xl -z-10 opacity-30"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Contact Section -->
+<section class="py-24 bg-white">
+<div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+<span class="text-secondary font-black tracking-widest uppercase">Contact Us</span>
+<h2 class="text-3xl md:text-5xl font-black text-primary">お気軽にお問い合わせください</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-2xl mx-auto">
+                    活動内容へのご質問や、支援・入会に関するご相談など、どんなことでもお気軽にご連絡ください。
+                </p>
+<div class="pt-4">
+<button class="bg-primary text-white px-12 py-5 rounded-xl font-bold text-xl hover:bg-tertiary transition-all shadow-lg hover:shadow-primary/20">
+                        お問い合わせフォームへ
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-emerald-900 dark:bg-emerald-950 text-white dark:text-emerald-50 w-full pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1">
+<div class="text-xl font-bold text-white mb-4">JDGP</div>
+<p class="text-emerald-100/80 text-sm leading-relaxed mb-6 font-['Noto_Sans_JP']">
+                    特定非営利活動法人<br/>日本障害者ゴルフ選手会<br/>
+                    (Japan Disabled Golfers Association)
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-emerald-800 flex items-center justify-center hover:bg-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Menu</h4>
+<ul class="space-y-4 font-['Noto_Sans_JP'] text-sm">
+<li><a class="text-emerald-100/80 hover:text-white hover:translate-y-[-2px] transition-transform duration-200 inline-block" href="#">団体概要</a></li>
+<li><a class="text-emerald-100/80 hover:text-white hover:translate-y-[-2px] transition-transform duration-200 inline-block" href="#">活動内容</a></li>
+<li><a class="text-emerald-100/80 hover:text-white hover:translate-y-[-2px] transition-transform duration-200 inline-block" href="#">お知らせ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Support</h4>
+<ul class="space-y-4 font-['Noto_Sans_JP'] text-sm">
+<li><a class="text-emerald-100/80 hover:text-white hover:translate-y-[-2px] transition-transform duration-200 inline-block" href="#">支援する</a></li>
+<li><a class="text-emerald-100/80 hover:text-white hover:translate-y-[-2px] transition-transform duration-200 inline-block" href="#">お問い合わせ</a></li>
+<li><a class="text-emerald-100/80 hover:text-white hover:translate-y-[-2px] transition-transform duration-200 inline-block" href="#">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Access</h4>
+<p class="text-emerald-100/80 text-sm leading-relaxed">
+                    〒100-0000<br/>
+                    東京都千代田区麹町...<br/>
+                    TEL: 03-XXXX-XXXX
+                </p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-emerald-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-emerald-100/60 text-xs font-['Noto_Sans_JP']">&copy; Japan Disabled Golfers Association. All Rights Reserved.</p>
+<div class="flex gap-6 text-xs text-emerald-100/60">
+<a class="hover:text-white transition-colors" href="#">利用規約</a>
+<a class="hover:text-white transition-colors" href="#">Cookieポリシー</a>
+</div>
+</div>
+</footer>
+</body></html>
