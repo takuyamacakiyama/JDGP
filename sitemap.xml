@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://jdgp.jp/</loc><priority>1.0</priority></url>
+  <url><loc>https://jdgp.jp/about</loc><priority>0.8</priority></url>
+  <url><loc>https://jdgp.jp/about/overview</loc><priority>0.7</priority></url>
+  <url><loc>https://jdgp.jp/about/message</loc><priority>0.6</priority></url>
+  <url><loc>https://jdgp.jp/about/team</loc><priority>0.6</priority></url>
+  <url><loc>https://jdgp.jp/about/access</loc><priority>0.5</priority></url>
+  <url><loc>https://jdgp.jp/about/disclosure</loc><priority>0.5</priority></url>
+  <url><loc>https://jdgp.jp/activities</loc><priority>0.8</priority></url>
+  <url><loc>https://jdgp.jp/activities/support</loc><priority>0.7</priority></url>
+  <url><loc>https://jdgp.jp/activities/participation</loc><priority>0.7</priority></url>
+  <url><loc>https://jdgp.jp/activities/outreach</loc><priority>0.7</priority></url>
+  <url><loc>https://jdgp.jp/activities/records</loc><priority>0.6</priority></url>
+  <url><loc>https://jdgp.jp/activities/history</loc><priority>0.5</priority></url>
+  <url><loc>https://jdgp.jp/support</loc><priority>0.8</priority></url>
+  <url><loc>https://jdgp.jp/support/donate</loc><priority>0.7</priority></url>
+  <url><loc>https://jdgp.jp/support/corporate</loc><priority>0.7</priority></url>
+  <url><loc>https://jdgp.jp/join</loc><priority>0.7</priority></url>
+  <url><loc>https://jdgp.jp/news</loc><priority>0.7</priority></url>
+  <url><loc>https://jdgp.jp/contact</loc><priority>0.6</priority></url>
+  <url><loc>https://jdgp.jp/reports</loc><priority>0.5</priority></url>
+  <url><loc>https://jdgp.jp/privacy</loc><priority>0.3</priority></url>
+</urlset>

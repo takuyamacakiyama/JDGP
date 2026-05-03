@@ -2,18 +2,20 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8"/>
+<link rel="icon" type="image/png" href="/assets/favicon.png"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>お問い合わせ | NPO法人日本障害者ゴルフ選手会</title>
 <meta name="description" content="NPO法人日本障害者ゴルフ選手会（JDGP）へのお問い合わせ。参加支援・企業協賛・取材・一般のお問い合わせを受け付けています。"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="お問い合わせ | JDGP"/>
 <meta property="og:description" content="参加支援・企業協賛・取材・一般のお問い合わせ。"/>
-<meta property="og:image" content="/assets/ogp/ogp-default.png"/>
-<meta property="og:url" content="/contact"/>
+<meta property="og:image" content="/assets/ogp/ogp-default.jpg"/>
+<meta property="og:url" content="https://jdgp.jp/contact"/>
+<link rel="canonical" href="https://jdgp.jp/contact"/>
 <meta property="og:site_name" content="NPO法人日本障害者ゴルフ選手会"/>
 <meta property="og:locale" content="ja_JP"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="/assets/ogp/ogp-default.png"/>
+<meta name="twitter:image" content="/assets/ogp/ogp-default.jpg"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -99,7 +101,7 @@
             <h3 class="font-bold text-primary">取材・メディア</h3>
           </div>
           <p class="text-on-surface-variant text-sm mb-3">取材依頼・掲載依頼は下記フォームより</p>
-          <a href="#contact-form" class="text-secondary font-bold text-sm hover:underline inline-flex items-center gap-1">お問い合わせフォームへ <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+          <a href="https://forms.gle/sRXRT7CR7pJTjaan8" target="_blank" rel="noopener noreferrer" class="text-secondary font-bold text-sm hover:underline inline-flex items-center gap-1">お問い合わせフォームへ <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
         </div>
         <div class="bg-white rounded-2xl border border-primary/10 p-5">
           <div class="flex items-center gap-3 mb-3">
@@ -107,55 +109,21 @@
             <h3 class="font-bold text-primary">その他のお問い合わせ</h3>
           </div>
           <p class="text-on-surface-variant text-sm mb-3">入会・ボランティア・一般のご質問など</p>
-          <a href="#contact-form" class="text-secondary font-bold text-sm hover:underline inline-flex items-center gap-1">お問い合わせフォームへ <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+          <a href="https://forms.gle/sRXRT7CR7pJTjaan8" target="_blank" rel="noopener noreferrer" class="text-secondary font-bold text-sm hover:underline inline-flex items-center gap-1">お問い合わせフォームへ <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
         </div>
       </div>
     </div>
 
     <!-- お問い合わせフォーム -->
-    <div id="contact-form">
-      <h2 class="text-2xl md:text-3xl font-headline font-black text-primary mb-6 flex items-center gap-3">
+    <div id="contact-form" class="text-center pt-4">
+      <h2 class="text-2xl md:text-3xl font-headline font-black text-primary mb-6 flex items-center gap-3 justify-center">
         <span class="h-px w-8 bg-secondary"></span> お問い合わせフォーム
       </h2>
-      <div class="bg-white rounded-2xl border border-primary/10 p-6 md:p-8">
-        <form class="space-y-6" action="#" method="post">
-          <div>
-            <label for="name" class="block text-sm font-bold text-primary mb-2">お名前 <span class="text-red-500">*</span></label>
-            <input type="text" id="name" name="name" required class="w-full rounded-lg border-primary/20 focus:border-primary focus:ring-primary/20 px-4 py-3"/>
-          </div>
-          <div>
-            <label for="email" class="block text-sm font-bold text-primary mb-2">メールアドレス <span class="text-red-500">*</span></label>
-            <input type="email" id="email" name="email" required class="w-full rounded-lg border-primary/20 focus:border-primary focus:ring-primary/20 px-4 py-3"/>
-          </div>
-          <div>
-            <label for="category" class="block text-sm font-bold text-primary mb-2">お問い合わせ種別</label>
-            <select id="category" name="category" class="w-full rounded-lg border-primary/20 focus:border-primary focus:ring-primary/20 px-4 py-3">
-              <option value="">選択してください</option>
-              <option value="general">一般のお問い合わせ</option>
-              <option value="join">入会・参加について</option>
-              <option value="volunteer">ボランティアについて</option>
-              <option value="media">取材・メディアについて</option>
-              <option value="other">その他</option>
-            </select>
-          </div>
-          <div>
-            <label for="message" class="block text-sm font-bold text-primary mb-2">お問い合わせ内容 <span class="text-red-500">*</span></label>
-            <textarea id="message" name="message" rows="6" required class="w-full rounded-lg border-primary/20 focus:border-primary focus:ring-primary/20 px-4 py-3"></textarea>
-          </div>
-          <div class="bg-surface-container-low rounded-xl p-4">
-            <label class="flex items-start gap-3 cursor-pointer">
-              <input type="checkbox" required class="mt-1 rounded border-primary/20 text-primary focus:ring-primary/20"/>
-              <span class="text-sm text-on-surface-variant"><a href="/privacy" class="text-secondary font-bold hover:underline">プライバシーポリシー</a>に同意の上、送信してください。</span>
-            </label>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="inline-flex items-center gap-2 bg-primary text-white px-10 py-4 rounded-xl font-bold hover:bg-tertiary transition-all">
-              <span class="material-symbols-outlined text-sm">send</span> 送信する
-            </button>
-          </div>
-        </form>
-        <p class="text-xs text-on-surface-variant/60 text-center mt-4">※ 返信には1週間程度お時間をいただく場合がございます。</p>
-      </div>
+      <p class="text-on-surface-variant mb-6">以下のフォームからお問い合わせください。返信には1週間程度お時間をいただく場合がございます。</p>
+      <a href="https://forms.gle/sRXRT7CR7pJTjaan8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary text-white px-10 py-4 rounded-xl font-bold hover:bg-tertiary hover:shadow-lg transition-all">
+        <span class="material-symbols-outlined text-sm">open_in_new</span> お問い合わせフォームへ
+      </a>
+      <p class="text-xs text-on-surface-variant/60 mt-3">※ Googleフォームに遷移します</p>
     </div>
 
     <!-- メール連絡先 -->
