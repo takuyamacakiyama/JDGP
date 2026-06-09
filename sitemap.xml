@@ -18,6 +18,10 @@
   <url><loc>https://jdgp.jp/support/corporate</loc><priority>0.7</priority></url>
   <url><loc>https://jdgp.jp/join</loc><priority>0.7</priority></url>
   <url><loc>https://jdgp.jp/news</loc><priority>0.7</priority></url>
+  <url><loc>https://jdgp.jp/news/joyx-open-2026-qualifier</loc><priority>0.6</priority></url>
+  <url><loc>https://jdgp.jp/news/site-launch</loc><priority>0.5</priority></url>
+  <url><loc>https://jdgp.jp/news/donation-corporate-support</loc><priority>0.5</priority></url>
+  <url><loc>https://jdgp.jp/news/membership-recruitment</loc><priority>0.5</priority></url>
   <url><loc>https://jdgp.jp/contact</loc><priority>0.6</priority></url>
   <url><loc>https://jdgp.jp/reports</loc><priority>0.5</priority></url>
   <url><loc>https://jdgp.jp/privacy</loc><priority>0.3</priority></url>
